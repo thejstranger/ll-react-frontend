@@ -8,7 +8,7 @@
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
+    "babel-polyfill": "^6.26.0",
     "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "jest": "^24.9.0",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2"
   },
@@ -41,6 +43,7 @@
     "@emotion/core": "^10.0.16",
     "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.2.1",
+    "@testing-library/react": "^9.1.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
